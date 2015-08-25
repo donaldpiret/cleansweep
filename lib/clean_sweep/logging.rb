@@ -1,4 +1,4 @@
-module CleanSweep::PurgeRunner::Logging
+module CleanSweep::Logging
 
   def report(force=false)
     report_duration = Time.now - @report_interval_start

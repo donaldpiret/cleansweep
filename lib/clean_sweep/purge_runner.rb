@@ -76,11 +76,7 @@ require 'stringio'
 #    pauses until the replication lag is below 90% of this value.
 
 class CleanSweep::PurgeRunner
-
-  require 'clean_sweep/purge_runner/logging'
-  require 'clean_sweep/purge_runner/mysql_status'
-
-  include CleanSweep::PurgeRunner::Logging
+  include CleanSweep::Logging
 
   # This helps us track the state of replication and history list and pause
   # if necessary
